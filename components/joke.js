@@ -23,6 +23,16 @@ export default class Joke extends Component {
       );
 
   };
+  componentDidMount() {
+    this.popup.show({
+      onPress: function() {console.log('Pressed')},
+      appTitle: 'Some App',
+      timeText: 'Now',
+      title: 'Hello World',
+      body: 'This is a sample message.\nTesting emoji 😀',
+      slideOutTime: 5000
+    });
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -34,16 +44,7 @@ export default class Joke extends Component {
       </View>
     )
   }
-  /*componentDidMount() {
-    this.popup.show({
-      onPress: function() {console.log('Pressed')},
-      appTitle: 'Some App',
-      timeText: 'Now',
-      title: 'Hello World',
-      body: 'This is a sample message.\nTesting emoji 😀',
-      slideOutTime: 5000
-    });
-  }*/
+  
 }
 const styles = StyleSheet.create({
     container:{

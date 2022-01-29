@@ -7,24 +7,18 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Joke from './components/joke';
+import JokeData from './components/joke_api';
+import MyDrawer from './components/button_drawer';
 
 export default function App() {
-  const Tab = createBottomTabNavigator();
+  
   const Drawer = createDrawerNavigator();
   return (
     <>
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="About" component={About} />
-        <Tab.Screen name="Contact" component={Contact} />
-      </Tab.Navigator>
+      <MyDrawer />
     </NavigationContainer>
-    <NavigationContainer>
-       <Drawer.Navigator>
-        <Drawer.Screen name = "Joke" component={Joke} />
-      </Drawer.Navigator>
-    </NavigationContainer>
+    <JokeData />
     </>
   );
 }
