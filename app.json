@@ -41,6 +41,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "It is a skeleton app with navigation(drawer and nested) and some push notification and API integration",
+    "githubUrl": "https://github.com/albybaby250219/NookCodingChallenge.git"
   }
 }
