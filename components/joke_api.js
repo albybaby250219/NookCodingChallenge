@@ -18,7 +18,7 @@ export default function JokeData(){
  
   //url for the API
   const url = `https://v2.jokeapi.dev/joke/${category}`
-  let joke , msg, c  = "";
+  let joke , msg, c, setup, delivery = "";
 
   useEffect(() => {
     //axios is used to handle the api call
@@ -26,14 +26,18 @@ export default function JokeData(){
               .get(url)
               .then(function (response) {
                 // handle success
-                joke = response.data.joke;
+                console.log(response.data);
                 c = response.data.category;
                 console.log(joke)
-                if (joke === "undefined" || joke === null || joke === ""){
-                    msg = "There is no joke in the API"
-                    setError(msg);
+                if (response.data.type === "twopart"){
+                    setup = response.data.setup;
+                    delivery = response.data.delivery;
+                    joke = setup.concat(" ", delivery);
+                    setData(joke);
+                    setCat(c);
                 }
                 else{
+                  joke = response.data.joke;
                 setData(joke);
                 setCat(c);
                 }
