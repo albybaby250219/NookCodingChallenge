@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default class About extends Component {
+export default class Settings extends Component {
   render() {
     return (
-      <View style={styles.about_container}>
-        <Text>About</Text>
+      <View style={styles.container}>
+        <Text>Settings</Text>
       </View>
     )
   }
 }
 const styles= StyleSheet.create({
-    about_container:{
+    container:{
         flex: 1, 
         alignItems: 'center', 
         justifyContent: 'center',

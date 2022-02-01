@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//import { Button, View, Text, StyleSheet } from 'react-native';
-//import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import About from './About_screen';
 import Contact from './Contact_screen';

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet } from 'react-native';
-//import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class Contact extends Component {
   render() {
