@@ -1,6 +1,9 @@
 # NookCodingChallenge
 ## Live Project
 -  You can view the project on https://expo.dev/@albybaby/NookCodingChallenge
+
+## Screenshot
+![WhatsApp-Image-2022-02-08-at-1 07 46-AM-3](https://user-images.githubusercontent.com/78487874/187249549-2b0c6a77-c907-49f6-9f2c-73b46248ec7e.jpg)
 ## Project Description
 
   -  To develop a react native skeleton app that has different navigation like the drawer, stack and Tab 
